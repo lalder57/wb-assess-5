@@ -1,6 +1,9 @@
 import { Op } from 'sequelize';
 import { Animal, Human } from './model.js';
 
+// const human1 = await Human.findByPk(2)
+// console.log(human1.getFullName())
+
 // Get the human with the primary key 2
 export const query1 = null;
 
