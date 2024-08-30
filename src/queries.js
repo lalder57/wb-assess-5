@@ -102,10 +102,10 @@ export async function getHumansByAnimalSpecies(species) {
   for (const result of results) {
     humans.add(result.getFullName());
   }
-  console.log(humans);
+  return humans;
 }
 
-getHumansByAnimalSpecies('dog');
+// console.log(getHumansByAnimalSpecies('dog');
 
 // const result = await Animal.findAll({
 //   where: {
