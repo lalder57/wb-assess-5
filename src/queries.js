@@ -65,12 +65,16 @@ export const query8 = await Human.findAll({
     },
   },
 });
-console.log(query8);
+// console.log(query8);
 
 // Continue reading the instructions before you move on!
 
 // Print a directory of humans and their animals
-export async function printHumansAndAnimals() {}
+export async function printHumansAndAnimals() {
+  const allHumans = await Human.findAll();
+  console.log(allHumans);
+
+}
 
 // Return a Set containing the full names of all humans
 // with animals of the given species.
